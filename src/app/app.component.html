@@ -1,20 +1,253 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
+<html>
+  <head>
+      <title>
+        Software Testing and Academic Integrity
+      </title>
+  </head>
+
+  <body>
+    <h1 align="center">
+      Software Testing and Academic Integrity
+    </h1>
+    <h4 align="center">
+      This covers information learned in chapter 1 
+      of A Practitioner's Guide to Software Test Design.
+    </h4>
+    <hr><br>
+  
+    <div align="center">
+      <label>
+        Software Testing is defined as 
+        "the process of operating a system or component under 
+        specified conditions, observing or recording the results, 
+        and making an evaluation of some aspect of the system or component" 
+        by IEEE.
+      </label>
+    </div>
+    <br>
+    <div>
+      <label>
+        1) Boris Beizer describes 5 levels of testing maturity.
+      </label>
+      <br>
+      <label class="left-margin">
+        Rank the options 0-4.
+      </label>
+      <br><br>
+      <form class="left-margin">
+        <input type="text" size="3" name="level3" [(ngModel)]="level3">
+        "The purpose of testing is not to prove anything, 
+        but to reduce the perceived risk of not working 
+        to an acceptable value."
+        <br><br>
+        <input type="text" size="3" name="level1" [(ngModel)]="level1">
+        "The purpose of testing is to show that software works."
+        <br><br>
+        <input type="text" size="3" name="level4" [(ngModel)]="level4">
+        "Testing is not an act. It is a mental discipline 
+        that results in low-risk software without much testing effort."
+        <br><br>
+        <input type="text" size="3" name="level0" [(ngModel)]="level0">
+        "There's no difference between testing and debugging other 
+        than in support of debugging, testing has no purpose."
+        <br><br>
+        <input type="text" size="3" name="level2" [(ngModel)]="level2">
+        "The purpose of testing is to show that the software doesn't work."
+        <br><br>
+      </form>
+    </div>
+
+    <br><br>
+
+    <div>
+      <label>
+        2) Well designed test cases are composed of three parts:
+      </label>
+      <ul>
+        <li>Inputs</li>
+        <li>Outputs</li>
+        <li>Order of execution</li>
+      </ul>
+      <label class="left-margin">
+        Determining the expected outputs of is the function of an "orcale". 
+      </label>
+      <br>
+      <label class="left-margin">
+        Beizer lists five types of oracles, name them.
+      </label>
+      <br>
+      <label class="left-margin">
+        "1" for Kiddie Oracles
+      </label>
+      <br>
+      <label class="left-margin">
+        "2" for Regression Test Suites
+      </label>
+      <br>
+      <label class="left-margin">
+        "3" for Validated Data
+      </label>
+      <br>
+      <label class="left-margin">
+        "4" for Purchased Test Suites
+      </label>
+      <br>
+      <label class="left-margin">
+        "5" for Existing Program
+      </label>
+      <br>
+      <br>
+      <form class="left-margin">
+        <input type="text" size="3" name="purchased-4" [(ngModel)]="purchased4">
+        "Run the program against a standardized test suite that 
+        has veen previously created and validates."
+        <br><br>
+        <input type="text" size="3" name="existing-5" [(ngModel)]="existing5">
+        "Run the program and compare the output to another 
+        version of the program."
+        <br><br>
+        <input type="text" size="3" name="kidding-1" [(ngModel)]="kidding1">
+        "Just run the program and see what comes out. 
+        If it looks about right, it must be right."
+        <br><br>
+        <input type="text" size="3" name="validated-3" [(ngModel)]="validated3">
+        "Run the program and compare the results against a 
+        standard such as a tale, formula, or other accepted 
+        definition of valid output."
+        <br><br>
+        <input type="text" size="3" name="regression-2" [(ngModel)]="regression2">
+        "Run the program and compare the output to the results 
+        of the same tests run against a previous version of the program."
+      </form>
+    </div>
+
+    <br><br>
+    <div>
+      <label>
+        3) There are 3 types of testing: black box, white box, and grey box.
+      </label>
+      <br>
+      <label class="left-margin">
+        Enter 'black', 'white', or 'grey' in the perspective text fields.
+      </label>
+      <br><br>
+      <form class="left-margin"> 
+        <input type="text" size="8" name="grey" [(ngModel)]="grey">
+        Peeking into the box user test just long enough to understand how it has been 
+        implemented. Then we close up the box and use our knowledge to choose more effective test.
+        <br><br>
+        <input type="text" size="8" name="white" [(ngModel)]="white">
+        A strategy in which testing is based on the internal paths, structure, and 
+        implementation of the software under test. Requires detailed programming skills.
+        <br><br>
+        <input type="text" size="8" name="black" [(ngModel)]="black">
+        A strategy in which testing is based soley on the requirements and specifications. 
+        Requires no knowledge of the internal paths, structure, or implementation of the software 
+        under test.
+      </form>
+    </div>
+
+    <br><br>
+    <div>
+      <label>4) Testing levels - There are 4 testing levels (unit testing, integration testing, 
+        system testing, and acceptance testing).
+      </label>
+      <br>
+      <label class="left-margin">
+        Enter 'unit', 'integration', 'system', or 'acceptance' in the perspective text fields.
+      </label>
+      <br><br>
+      <form class="left-margin">
+        <input type="text" size="15" name="system" [(ngModel)]="system">
+        Focuses on defects that arise at this highest level of integration.
+        <br><br>
+        <input type="text" size="15" name="unit" [(ngModel)]="unit">
+        Testing the smallest piece of the software.
+        <br><br>
+        <input type="text" size="15" name="acceptance" [(ngModel)]="acceptance">
+        Testing, which when completed successfully, will result in the customer accepting the software and paying up.
+        <br><br>
+        <input type="text" size="15" name="integration" [(ngModel)]="integration">
+        Testing units subsystems and finally into systems.
+      </form>
+    </div>
+
+    <br><br>
+    <button class="submit-button" (click)="submitAnswers()">
+      SUBMIT
+    </button>
+    <br><br>
+    <label class="score-label">{{ scoreLabel }}</label>
+
+    <br>
+    <hr>
+    <div>
+      <h3 align="center">
+        Academic Integrity
+      </h3>
+      <label>
+        The following items are forbidden by the FGCU Student Code of Conduct.
+      </label>
+      <br>
+      <label>
+        The complete Student Code of Conduct can be found at 
+        https://www2.fgcu.edu/generalcounsel/files/regulations/FGCU_PR4.002_Student_Code_of_Conduct_061119.pdf
+      </label>
+      <br>
+      <ol type="a">
+        <li>
+          Submitting the work of another person or entity as your own.
+        </li>
+        <li>
+          Intentionally using or attempting to use any unauthorized assistance, 
+          including but not limited to, materials, notes, study aids, or devices 
+          or communication of any kind during an academic exercise, including, 
+          but not limited to, quizzes, tests, or examinations.
+        </li>
+        <li>
+          Use of sources beyond those authorized by the instructor in writing 
+          papers, preparing reports, solving problems, or carrying out other 
+          assignments.
+        </li>
+        <li>
+            The acquisition, without permission, of tests or other academic 
+            material belonging to a member of the University faculty or staff.
+        </li>
+        <li>
+            Engaging in any behavior specifically prohibited by a faculty 
+            member in the course syllabus or class instruction.
+        </li>
+        <li>
+            Submitting work which has been submitted, in whole or in part, 
+            in a previous or concurrent class without instructor approval.
+        </li>
+        <li>
+            Preparing or providing work with the knowledge or intention that 
+            it may be represented as the work of another.
+        </li>
+        <li>
+            Sharing or disseminating tests, notes, slides, presentations, recordings, 
+            or any other material which is the intellectual property of an instructor 
+            or of the University without prior approval, when prohibited.
+        </li>
+        <li>
+            Falsifying, misrepresenting, or fraudulently presenting academic work.
+        </li>
+        <li>
+            Using the work of another without giving proper credit and citation of 
+            source material using an approved style.
+        </li>
+        <li>
+            Attempting to obtain a grade or other academic credit through improper 
+            means or otherwise subverting the educational process by any means whatsoever.
+        </li>
+        <li>
+            Soliciting, assisting, concealing, or attempting any act of academic misconduct.
+        </li>
+      </ol>
+
+    </div>
+  </body>
+  
+</html>

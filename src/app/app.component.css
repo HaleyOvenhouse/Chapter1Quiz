@@ -1,0 +1,15 @@
+.left-margin {
+    margin-left: 18px;
+}
+
+.submit-button {
+    width: 150px;
+    height: 75px;
+    background-color: #00794C;
+    color: white;
+}
+
+.score-label {
+    font-size: 40px;
+    margin-left: 18px;
+}
